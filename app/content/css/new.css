@@ -85,18 +85,27 @@ img {
 }
 
 #wrapper {
-    height: 50%;
+    height: auto;
     overflow: hidden;
-    width: 60%;
-    /* it is only important to be bigger then parent for one image width size */
+    width: auto;
     display: block;
     margin: 0 auto;
 }
 
 .newImg {
-    max-width: 500px !important;
-    max-height: 200px !important;
-    margin-top: 10px;
+    height: 100%;
+    width: 98%;
+    display: block;
+    max-width: 100%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newImg:hover {
+    border: 1px solid #777;
+    border-radius: 18px;
 }
 
 .background-image-holder, .foreground-image-holder {

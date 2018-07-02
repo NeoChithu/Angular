@@ -8,17 +8,18 @@ myResume.config(['$locationProvider', function ($locationProvider) {
 
 
 myResume.config(['$routeProvider', function ($routeProvider) {
+    $routeProvider
     // Home 
-    $routeProvider.when('/', {
+    .when('/', {
         templateUrl: 'index.html',
         controller: 'mainController'
-    });
+    })
     // Food
-    $routeProvider.when('/about', {
+    .when('/about', {
         templateUrl: 'about.html',
         controller: 'aboutController'
-    });
-    $routeProvider.otherwise({ redirectTo: '/' });
+    })
+    .otherwise({ redirectTo: '/' });
 }]);
 
 myResume.controller('aboutController', ['$scope', function ($scope) {
