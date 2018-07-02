@@ -1,0 +1,151 @@
+.selectDropdown {
+    /* text-align: center; */
+    width: 200px;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+    /* float: right; */
+    /* padding-bottom: 22px;     */
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.fa {
+    margin-left: 10px;
+    font-size: 1.6em !important;
+    line-height: 34px !important;
+}
+
+.imgEdited {
+    width: 200px;
+    /* height: 200px; */
+    height: auto;
+    float: left;
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    /* text-overflow: inherit; */
+}
+
+body {
+    background-color: #f2f4f5
+}
+
+.myBackColor {
+    background-color: #ffffff
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.newAlign {
+    text-align: center;
+    margin-left: 11px;
+    margin-top: 10px !important;
+    color: #13ab67;
+    font-size: 35px;
+}
+
+.textAlign {
+    /* text-align: center; */
+    /* margin-left: 11px; */
+    margin-top: 10px !important;
+    color: #13ab67;
+    font-size: 35px;
+}
+
+.line {
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.myBox {
+    border: 1px solid aliceblue;
+    /* background-color: whitesmoke; */
+    background-color: rgb(255, 253, 255);
+    color: rgba(100, 96, 97, 1);
+    padding: 10% 0;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.368em;
+    letter-spacing: .05em;
+}
+
+.center {
+    /* align-items: center; */
+    display: block;
+    margin: 0 auto;
+    /* margin-top: 10px; */
+}
+
+#wrapper {
+    height: 50%;
+    overflow: hidden;
+    width: 60%;
+    /* it is only important to be bigger then parent for one image width size */
+    display: block;
+    margin: 0 auto;
+}
+
+.newImg {
+    max-width: 500px !important;
+    max-height: 200px !important;
+    margin-top: 10px;
+}
+
+.background-image-holder, .foreground-image-holder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    z-index: 0;
+    background-position: 50% 50% !important;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* Set the background color of body to tan */
+
+/* body {
+    background-color: tan;
+  } */
+
+/* On screens that are 992px or less, set the background color to blue */
+
+/* @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  } */
+
+/* On screens that are 600px or less, set the background color to olive */
+
+/* @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  } */
+
+.moveLeft {
+    margin-left: 20px;
+}
+
+.margineTop {
+    margin-top: 10px;
+}

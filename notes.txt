@@ -1,0 +1,11 @@
+Change Image -- set default image
+
+Add Route
+
+Add Firebase
+
+// Add / update / remove
+-> Education
+-> Skill
+
+Add Animation

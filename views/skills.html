@@ -1,0 +1,16 @@
+<div ng-if="myUser.skills">
+    <p class="textAlign">
+        <b>Skills : </b>
+    </p>
+
+    <div class="row" ng-repeat="skill in myUser.skills">
+
+        <div class="col-md-6">
+            {{skill}}
+        </div>
+        <!-- <div class="col-md-6">
+                    {{skill.year}}
+                </div> -->
+
+    </div>
+</div>

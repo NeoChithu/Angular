@@ -1,0 +1,15 @@
+<div ng-if="myUser.education">
+    <p class="textAlign">
+        <b>Education : </b>
+    </p>
+    <div class="row" ng-repeat="edu in myUser.education">
+
+        <div class="col-md-8">
+            {{edu.course}}
+        </div>
+        <div class="col-md-4">
+            {{edu.year}}
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,120 @@
+[
+    {
+        "name": "Chitambaram",
+        "lName": "Ponraj",
+        "thumb": "app/content/img/user_images/chitambaram.jpg",
+        "description": "Graduated from an Affiliated College of Anna University with a degree in Computer Science engineering. Numerous hands-on experience in software development, and the ability to solve problems in a timely and accurate manner, I enjoy being challenged and working on projects that require me to work outside my comfort zone and beyond knowledge, as continuing to learn and my contribution to your organization.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "PHP"
+        ],
+        "socialLink": [
+            {
+                "facebook": true,
+                "link": "https://www.facebook.com/chitambaram.ponraj"
+            },
+            {
+                "twitter": true,
+                "link": "https://twitter.com/chitambaram2"
+            },
+            {
+                "linkedIn": true,
+                "link": "https://linkedin.com/in/chitambaram-p-021ab594"
+            }
+        ],
+        "education": [
+            {
+                "course": "B.E IN COMPUTER SCIENCE",
+                "year": "2014 - 2017",
+                "college" : "Sri Subramaniya College of Engg & Tech,"
+            },
+            {
+                "course": "DIPLOMA IN COMPUTER ENGINEERING",
+                "year": "2011 - 2014",
+                "college" : "Rudhreveni Muthuswamy College"
+            },
+            {
+                "course" : "SSLC",
+                "year" : "2011",
+                "college" : "Govt Model HSS Boys"
+            }
+        ],
+        "workExperience": [
+            {
+                "companyName": "Thomas Innovation",
+                "position": "Software Developer",
+                "year": "August 2017 - June 2018",
+                "projects": [
+                    {
+                        "projectName": "ChatBot",
+                        "description": [
+                            "Chatbot that is Powered by api.ai for Facebook that fulfills customer need based on the requirements.",
+                            "Collaborating with cross-functional teams to define, design new Chatbots.",
+                            "Analyzed the design needs, document, test, and develop BOT as required to satisfy the requirements.",
+                            "Used Python as the Backend and also have Integrated Paytm Gateway."
+                        ]
+                    },
+                    {
+                        "projectName": "ProjectPharma",
+                        "description": [
+                            "Hyperledger-Composer is a Framework from IBM to quickly develop Blockchain based Solutions.",
+                            "ProjectPharma Mainly focuses to eliminate counterfeit drugs in the Pharma industry and also to increase the efficiency to the pharmaceutical industry.",
+                            "The platform offers possibility to track pharmaceuticals through a supply chain that links digital systems to pharmaceuticals moving in the physical world.",
+                            "The platform will create a network of Manufacturers, logistics, wholesalers and retailers and for each drug Exchange that all will be all Recorded."
+                        ]
+                    },
+                    {
+                        "projectName": "Internet Scanner",
+                        "description": [
+                            "The objective of this project is to Listen to millions of conversations over the web, triangulate information, analyze customer sentimental.",
+                            "Engage the Customers through our Internet Scanner system that helps the business with effective customer service."
+                        ]
+                    }
+                ]
+            },
+            {
+                "companyName": "Thomas Innovation",
+                "position": "Software Developer",
+                "year": "August 2017 - June 2018"
+            }
+        ],
+        "achievements" : [
+            "Got I prize in Symposium at MCET – Mahalingam College of Engineering and Technology, Pollachi for the Technical events conducted at College Level on the Event HEPTATHION.",
+            "Got II prize at ACET – Angel College of Engineering and Technology, Tirupur for Presenting a paper on “Big Data and Hadoop” for the Event ABHIMAAN 2.0.",
+            "Attended numerus Events such as Paper Presentation, Code Debugger and so on while pursuing Degree."
+        ]
+    },
+    {
+        "name": "Test account",
+        "lName": "Test Last",
+        "thumb": "app/content/img/user_images/chithu.jpg",
+        "description": "I am a computer engineering student from Cairo, Egypt, I love Programming, Developing, and Problem Solving. I am passionate about startups and entrepreneurship so I dream to start my own company from scratch, I love adventures & taking risks so every second I search for a new thing to do which will help me open up for new opportunities as well as teach me new ideas about life. I am searching for an internship which will help me increase my technical knowledge as well as develop my soft skills. To help me become a high-quality graduate in the market, give me experience looking for jobs, and help me become a future entrepreneur.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "MySQL"
+        ],
+        "socialLink": [
+            {
+                "facebook": true,
+                "link": ""
+            },
+            {
+                "twitter": true,
+                "link": ""
+            }
+        ],
+        "education": [
+            {
+                "course": "Bachelor of Electrical Engineering",
+                "year": "2012 - 2016"
+            },
+            {
+                "course": "Master of Electrical Engineering",
+                "year": "2016 - Now"
+            }
+        ]
+    }
+]

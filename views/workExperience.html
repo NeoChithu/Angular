@@ -1,0 +1,56 @@
+<div ng-if="myUser.workExperience">
+    <p class="textAlign">
+        <b>Work Experience : </b>
+    </p>
+
+    <div class="row col-md-12 moveLeft" ng-repeat="work in myUser.workExperience">
+        <div class="row col-md-12">
+            <h5>Company Name : {{work.companyName | uppercase}}</h5>
+        </div>
+
+        <div class="row col-md-12">
+            <ul class="list-group">
+                <!-- <li ng-if="work.companyName">
+                    Company Name : {{work.companyName}}
+                </li > -->
+                <li class="list-group-item" ng-if="work.position">
+                    {{work.position}}
+                </li>
+                <li class="list-group-item" ng-if="work.year">
+                    {{work.year}}
+                </li>
+            </ul>
+        </div>
+        <!-- <br/> -->
+        <!-- <div ng-if="work.projects"> -->
+        <div class = "margineTop" ng-show="work.projects" >
+
+            <button ng-mouseover = "mouseOver = true" class="btn btn-primary" type="button" value="+" ng-hide="!displayData" ng-click="displayData = false">
+                +
+            </button>
+
+            <button class="btn btn-success" type="button" value="-" ng-hide="displayData" ng-click="displayData = true">
+                -
+            </button>
+        </div>
+        <!-- </div> -->
+        <!-- {{displayData}} -->
+        <!-- </div> -->
+        <div class="row col-md-12 " ng-repeat="project in work.projects" ng-if="work.projects" ng-hide="displayData">
+            <div class="row col-md-12">
+                <h5 class="moveLeft">{{project.projectName}}</h5>
+            </div>
+            <div class="row ">
+                <ul>
+                    <li class="moveLeft" ng-repeat="subTitle in project.description">
+                        {{subTitle}}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,69 @@
+[
+    {
+       "name":"Chitambaram",
+       "lName":"Ponraj",
+       "thumb" : "app/content/img/user_images/chitambaram.jpg",
+       "description":"Graduate student majoring in electrical engineering. Professional field: Image Processing and Computer Science. Out-going person and be expert in leadership. ",
+       "skills":[
+          "HTML",
+          "CSS",
+          "PHP"
+       ],
+       "socialLink":[
+          {
+             "facebook":true,
+             "link":"https://www.facebook.com/chitambaram.ponraj"
+          },
+          {
+             "twitter":true,
+             "link":"https://twitter.com/chitambaram2"
+          },
+          {
+             "linkedIn":true,
+             "link":"https://linkedin.com/in/chitambaram-p-021ab594"
+          }
+       ],
+       "education":[
+          {
+             "course":"Bachelor of Electrical Engineering",
+             "year":"2012 - 2016"
+          },
+          {
+             "course":"Master of Electrical Engineering",
+             "year":"2016 - Now"
+          }
+       ]
+    },
+    {
+       "name":"Test account",
+       "lName":"Test Last",
+       "thumb" : "app/content/img/user_images/chithu.jpg",
+       "description":"I am a computer engineering student from Cairo, Egypt, I love Programming, Developing, and Problem Solving. I am passionate about startups and entrepreneurship so I dream to start my own company from scratch, I love adventures & taking risks so every second I search for a new thing to do which will help me open up for new opportunities as well as teach me new ideas about life. I am searching for an internship which will help me increase my technical knowledge as well as develop my soft skills. To help me become a high-quality graduate in the market, give me experience looking for jobs, and help me become a future entrepreneur.",
+       "skills":[
+          "HTML",
+          "CSS",
+          "PHP",
+          "MySQL"
+       ],
+       "socialLink":[
+          {
+             "facebook":true,
+             "link":""
+          },
+          {
+             "twitter":true,
+             "link":""
+          }
+       ],
+       "education":[
+          {
+             "course":"Bachelor of Electrical Engineering",
+             "year":"2012 - 2016"
+          },
+          {
+             "course":"Master of Electrical Engineering",
+             "year":"2016 - Now"
+          }
+       ]
+    }
+ ]

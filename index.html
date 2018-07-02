@@ -1,0 +1,78 @@
+<div class="container-fluid">
+    <div ng-controller="mainController">
+        <div class="jumbotron myBackColor col-md-12">
+            <div class="row">
+                <select ng-model="myUser" ng-options="data.name for data in myArrayData" class="selectDropdown">
+                </select>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- <img src="app/content/img/one.jpg" /> -->
+                    <img ng-src="{{myUser.thumb}}" />
+                </div>
+                <div class="col-md-8">
+                    <h1 class="profileName">
+                        {{myUser.name}} {{myUser.lName}}
+                    </h1>
+                    <p class="text-content">
+                        {{myUser.description}}
+                    </p>
+                    <div class="row">
+
+                        <div data-ng-repeat="socialdata in myUser.socialLink">
+                            <!-- {{socialdata}} -->
+
+                            <a ng-href="{{socialdata.link}}" target="_blank">
+                                <i class="fa fa-facebook" ng-if="socialdata.facebook && socialdata.link">
+                                </i>
+                                <!-- {{socialdata.status}} -->
+                            </a>
+
+                            <a ng-href="{{socialdata.link}}" target="_blank">
+                                <i class="fa fa-twitter" ng-if="socialdata.twitter && socialdata.link">
+                                </i>
+                                <!-- {{socialdata.status}} -->
+                            </a>
+
+                            <a ng-href="{{socialdata.link}}" target="_blank">
+                                <i class="fa fa-linkedin" ng-if="socialdata.linkedIn && socialdata.link">
+                                </i>
+                                <!-- {{socialdata.status}} -->
+                            </a>
+
+                        </div>
+
+                        <!-- <a href="https://www.facebook.com/leekuanru" target="_blank">
+                                <i class="fa fa-twitter" ng-if = "myUser.socialLink[2].facebook" ng-show = "myUser.socialLink[2].status"></i>
+                                {{myUser.socialLink[0].status}}
+                            </a> -->
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Education -->
+            <div ng-include="'views/education.html'"></div>
+
+            <!-- Skills -->
+            <div ng-include="'views/skills.html'"></div>
+
+            <!-- Work Experience -->
+            <div ng-include="'views/workExperience.html'"></div>
+
+            <!-- Achievements -->
+            <div ng-include="'views/achievements.html'"></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="panel panel-primary">
+                <div class="panel-heading">Status</div>
+                <div class="panel-body">
+                <h3>{{title}}</h3>
+                </div>
+            </div> -->
