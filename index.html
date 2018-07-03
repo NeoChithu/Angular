@@ -23,20 +23,40 @@
                         <div data-ng-repeat="socialdata in myUser.socialLink">
                             <!-- {{socialdata}} -->
 
-                            <a ng-href="{{socialdata.link}}" target="_blank">
-                                <i class="fa fa-facebook" ng-if="socialdata.facebook && socialdata.link">
+                            <a ng-if="socialdata.source == 'Facebook'" ng-href="{{socialdata.link}}" title="{{socialdata.source}}" target="_blank">
+                                <i class="fa fa-facebook">
                                 </i>
                                 <!-- {{socialdata.status}} -->
                             </a>
 
-                            <a ng-href="{{socialdata.link}}" target="_blank">
-                                <i class="fa fa-twitter" ng-if="socialdata.twitter && socialdata.link">
+                            <a ng-if="socialdata.source == 'Twitter'" ng-href="{{socialdata.link}}" title = "{{socialdata.source}}" target="_blank">
+                                <i class="fa fa-twitter">
                                 </i>
                                 <!-- {{socialdata.status}} -->
                             </a>
 
-                            <a ng-href="{{socialdata.link}}" target="_blank">
-                                <i class="fa fa-linkedin" ng-if="socialdata.linkedIn && socialdata.link">
+                            <a ng-if="socialdata.source == 'LinkedIn'" ng-href="{{socialdata.link}}" title = "{{socialdata.source}}" target="_blank">
+                                <i class="fa fa-linkedin">
+                                </i>
+                                <!-- {{socialdata.status}} -->
+                            </a>
+
+                            <!-- GIt Hub -->
+
+                            <a ng-if="socialdata.source == 'Github'" ng-href="{{socialdata.link}}" title = "{{socialdata.source}}" target="_blank">
+                                <i class="fa fa-github">
+                                </i>
+                                <!-- {{socialdata.status}} -->
+                            </a>
+
+                            <a ng-if="socialdata.source == 'Angel List'" ng-href="{{socialdata.link}}" title = "{{socialdata.source}}" target="_blank">
+                                <i class="fa fa-angellist">
+                                </i>
+                                <!-- {{socialdata.status}} -->
+                            </a>
+
+                            <a ng-if="socialdata.source == 'Stack Overflow'" ng-href="{{socialdata.link}}" title = "{{socialdata.source}}" target="_blank">
+                                <i class="fa fa-stack-overflow">
                                 </i>
                                 <!-- {{socialdata.status}} -->
                             </a>

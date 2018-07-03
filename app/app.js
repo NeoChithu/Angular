@@ -9,15 +9,19 @@ myResume.config(['$locationProvider', function ($locationProvider) {
 
 myResume.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-    // Home 
     .when('/', {
         templateUrl: 'index.html',
         controller: 'mainController'
-    })
+    })    
+    // Home 
+    // .when('/', {
+    //     templateUrl: 'index.html',
+    //     controller: 'mainController'
+    // })
     // Food
     .when('/about', {
-        templateUrl: 'about.html',
-        controller: 'aboutController'
+        templateUrl: 'about.html'
+        // controller: 'aboutController'
     })
     .otherwise({ redirectTo: '/' });
 }]);
@@ -25,6 +29,14 @@ myResume.config(['$routeProvider', function ($routeProvider) {
 myResume.controller('aboutController', ['$scope', function ($scope) {
     // Bind "message" to display to html pages
     $scope.message = 'This is Food page.';
+}]);
+
+myResume.controller('contactController', ['$scope', function($scope){
+    $scope.message = '-kasbjdhvsjhdcv sajv';
+
+    $scope.contactForm = function(){
+        console.log($scope.contact.name)
+    };
 }]);
 
 

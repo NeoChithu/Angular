@@ -11,16 +11,28 @@
         ],
         "socialLink": [
             {
-                "facebook": true,
+                "source": "Facebook",
                 "link": "https://www.facebook.com/chitambaram.ponraj"
             },
             {
-                "twitter": true,
+                "source": "Twitter",
                 "link": "https://twitter.com/chitambaram2"
             },
             {
-                "linkedIn": true,
+                "source": "LinkedIn",
                 "link": "https://linkedin.com/in/chitambaram-p-021ab594"
+            },
+            {
+                "source": "Github",
+                "link": "https://github.com/NeoChithu/"
+            },
+            {
+                "source": "Angel List",
+                "link": "https://angel.co/chitambaram2"
+            },
+            {
+                "source": "Stack Overflow",
+                "link": "https://stackoverflow.com/users/8663785/chitambaram-p"
             }
         ],
         "education": [
