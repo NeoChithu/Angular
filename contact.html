@@ -1,5 +1,15 @@
 <div class="container-fluid" ng-controller="contactController">
     <div class="jumbotron myBackColor row">
+        
+        <div class="col-md-6">
+            <p>
+                Fill the Form to see the Angular Magic --->
+            </p>
+            You are
+            <span class="">{{contact.name}}</span>, and the reason for Contacting me is,
+            <span class="">{{contact.reason}}</span>
+        </div>
+
         <div class="col-md-6">
             <form ng-submit="contactForm()" novalidate>
 
@@ -14,12 +24,6 @@
                 </div>
                 <input class="btn btn-primary col-sm-offset-2 col-sm-8" type="submit" value="submit" />
             </form>
-        </div>
-
-        <div class="col-md-6">
-            You are
-            <span class="">{{contact.name}}</span>, and the reason for Contacting me is,
-            <span class="">{{contact.reason}}</span>
         </div>
     </div>
 </div>
