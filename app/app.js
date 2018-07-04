@@ -5,8 +5,6 @@ myResume.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.hashPrefix('');
 }]);
 
-
-
 myResume.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider

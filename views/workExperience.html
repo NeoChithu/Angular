@@ -5,7 +5,7 @@
 
     <div class="row col-md-12 moveLeft" ng-repeat="work in myUser.workExperience">
         <div class="row col-md-12">
-            <h5>Company Name : {{work.companyName | uppercase}}</h5>
+            <h5>Company Name : <span class = "companyHeading" >{{work.companyName | uppercase}}</span></h5>
         </div>
 
         <div class="row col-md-12">
@@ -38,7 +38,7 @@
         <!-- </div> -->
         <div class="row col-md-12 " ng-repeat="project in work.projects" ng-if="work.projects" ng-hide="displayData">
             <div class="row col-md-12">
-                <h5 class="moveLeft">{{project.projectName}}</h5>
+                <h5 class="moveLeft companyHeading" >{{project.projectName}}</h5>
             </div>
             <div class="row ">
                 <ul>

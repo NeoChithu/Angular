@@ -5,9 +5,14 @@
         "thumb": "app/content/img/user_images/camera.jpg",
         "description": "Graduated from an Affiliated College of Anna University with a degree in Computer Science engineering. Numerous hands-on experience in software development, and the ability to solve problems in a timely and accurate manner, I enjoy being challenged and working on projects that require me to work outside my comfort zone and beyond knowledge, as continuing to learn and my contribution to your organization.",
         "skills": [
+            "Python, Flask",
+            "PHP",
+            "Java",
+            "MySQL",
+            "AngularJs",
+            "JavaScript",
             "HTML",
-            "CSS",
-            "PHP"
+            "CSS"  
         ],
         "socialLink": [
             {
