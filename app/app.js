@@ -8,44 +8,45 @@ myResume.config(['$locationProvider', function ($locationProvider) {
 
 
 myResume.config(['$routeProvider', function ($routeProvider) {
+
     $routeProvider
-    .when('/', {
-        templateUrl: 'index.html',
-        controller: 'mainController'
-    })    
-    // Home 
-    // .when('/', {
-    //     templateUrl: 'index.html',
-    //     controller: 'mainController'
-    // })
-    // Food
-    .when('/about', {
-        templateUrl: 'about.html'
-        // controller: 'aboutController'
-    })
-    .otherwise({ redirectTo: '/' });
+
+        .when('/', {
+            templateUrl: 'index.html',
+            controller: 'mainController'
+        })
+
+        .when('/about', {
+            templateUrl: 'about.html'
+            // controller: 'aboutController'
+        })
+
+        .otherwise({ redirectTo: '/' });
+
 }]);
 
 myResume.controller('aboutController', ['$scope', function ($scope) {
     // Bind "message" to display to html pages
     $scope.message = 'This is Food page.';
+
 }]);
 
-myResume.controller('contactController', ['$scope', function($scope){
-    $scope.message = '-kasbjdhvsjhdcv sajv';
+myResume.controller('contactController', ['$scope', function ($scope) {
 
-    $scope.contactForm = function(){
+    $scope.contactForm = function () {
         console.log($scope.contact.name)
 
+        var name = $scope.contact.name;
         // Reseting Empty values to the Form
         $scope.contact.name = $scope.contact.email = $scope.contact.reason = '';
 
         // For Resetting the Form after Submission
         $scope.contactME.$setPristine();
         $scope.contactME.$setUntouched();
-        $scope.contactME.$submitted = false;        
-        alert("Form Submitted");
+        $scope.contactME.$submitted = false;
+        alert("Thank you" + name);
     };
+
 }]);
 
 
@@ -66,7 +67,7 @@ myResume.controller('mainController', ['$scope', '$http', function ($scope, $htt
         catch(function onError(response) {
             console.log(response);
         });
-        
+
 
     // $scope.myArrayData = [
     //     {
