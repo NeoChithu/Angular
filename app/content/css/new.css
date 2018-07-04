@@ -160,6 +160,14 @@ img {
     margin-top: 10px;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.5);
+}
+
+.red {
+    border: 2px solid red !important;
+}
+
+.textColor{
+    color: currentColor;
 }

@@ -1,29 +1,50 @@
-<div class="container-fluid" ng-controller="contactController">
+<div class="container-fluid" ng-controller="contactController" ng-init="conditional = true">
     <div class="jumbotron myBackColor row">
-        
+
         <div class="col-md-6">
             <p>
                 Fill the Form to see the Angular Magic --->
             </p>
+
             You are
-            <span class="">{{contact.name}}</span>, and the reason for Contacting me is,
-            <span class="">{{contact.reason}}</span>
+            <span class="textColor">
+                <b>{{contact.name | uppercase}}</b>
+            </span>, and the reason for Contacting me is,
+            <span class="textColor">
+                <b>{{contact.reason}}.</b>
+            </span>
+            You can Contact you through
+            <span class="textColor">
+                <b>{{contact.email}}.</b>
+            </span>
         </div>
 
         <div class="col-md-6">
-            <form ng-submit="contactForm()" novalidate>
+            <form ng-submit="contactForm()" name="contactME" novalidate>
 
                 <div class="form-group">
                     <label class="control-label col-sm-2">Name:</label>
-                    <input class="form-control col-md-12" type="text" placeholder="Name" ng-model="contact.name" />
+                    <input name="name" ng-class="{red: contactME.name.$invalid && contactME.name.$dirty}" class="form-control col-md-12" type="text"
+                        placeholder="Name" ng-model="contact.name" ng-required="true" />
                 </div>
-
+                <!-- {{contactMe.name.$error}} -->
                 <div class="form-group">
-                    <label class="control-label col-sm-2">Reason:</label>
-                    <input class="form-control col-md-12" type="text" placeholder="Reason" ng-model="contact.reason" />
+                    <label class="control-label col-sm-2">Email:</label>
+                    <input name="mail" ng-class="{red: contactME.mail.$invalid && contactME.mail.$dirty}" class="form-control col-md-12" type="email"
+                        placeholder="someone@gmail.com" ng-model="contact.email" ng-required="true" />
                 </div>
-                <input class="btn btn-primary col-sm-offset-2 col-sm-8" type="submit" value="submit" />
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Message:</label>
+                    <input name="reasonText" ng-class="{red: contactME.reasonText.$invalid && contactME.reasonText.$dirty}" class="form-control col-md-12"
+                        type="text" placeholder="Your Message" ng-model="contact.reason" ng-required="true" />
+                </div>
+                <p ng-hide="contactME.$valid">
+                    Fill the Form to Submit the Details.
+                </p>
+                <input ng-show="contactME.$valid" class="btn btn-primary col-sm-offset-2 col-sm-8" type="submit" value="submit" />
+
             </form>
         </div>
+
     </div>
 </div>

@@ -36,6 +36,15 @@ myResume.controller('contactController', ['$scope', function($scope){
 
     $scope.contactForm = function(){
         console.log($scope.contact.name)
+
+        // Reseting Empty values to the Form
+        $scope.contact.name = $scope.contact.email = $scope.contact.reason = '';
+
+        // For Resetting the Form after Submission
+        $scope.contactME.$setPristine();
+        $scope.contactME.$setUntouched();
+        $scope.contactME.$submitted = false;        
+        alert("Form Submitted");
     };
 }]);
 
